@@ -63,13 +63,10 @@ describe('immutability', () => {
         }));
 
         expect(state).to.equal(Map({
-          movies: List.of(
-            'Trainspotting',
-            '28 Days Later'
-          )
+          movies: List.of('Trainspotting', '28 Days Later')
         }));
-      })
-    }
-  })
+      });
+    });
+  });
 
 });
