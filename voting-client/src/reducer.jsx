@@ -5,7 +5,7 @@ function setState(state, newState) {
 }
 
 function vote(state, entry) {
-  const currentPair = state.getnIn(['vote', 'pair']);
+  const currentPair = state.getIn(['vote', 'pair']);
 
   if (currentPair && currentPair.includes(entry)) {
     return state.set('hasVoted', entry);
